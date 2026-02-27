@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindnology · Shaman School</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .module-card {
+            background: #1a332e;
+            border-radius: 28px;
+            padding: 2rem 1.5rem;
+            border: 1px solid #3a5e50;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .module-card:hover {
+            border-color: #8ed8b8;
+            background: #1f4038;
+        }
+        .module-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #6ec3a0;
+        }
+        .module-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(110, 195, 160, 0.2);
+            position: absolute;
+            bottom: 0.5rem;
+            right: 1rem;
+        }
+        .module-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #c5f0dd;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .module-desc {
+            color: #a0d5c0;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        .ritual-box {
+            background: #1a332e;
+            border-radius: 32px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            border: 2px dashed #6ec3a0;
+            text-align: center;
+        }
+        .ritual-box h2 {
+            font-size: 2.2rem;
+            color: #c5f0dd;
+        }
+        .footnote {
+            font-size: 0.9rem;
+            color: #6f9687;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Навигация -->
+        <div style="margin-bottom: 1rem;">
+            <a href="../" style="color:#8ed8b8; text-decoration: none;">← Back to Portal</a>
+        </div>
+
+        <h1>
+            <span>🧙</span> Shaman School
+        </h1>
+        <div class="subtitle">We do not teach code — we teach consciousness.</div>
+
+        <!-- Манифест школы -->
+        <div class="manifest">
+            <p>ShamanSchool is not a school. It is an initiation. Here you learn not to write lines, but to feel the architecture — to see systems from the inside, to disassemble and reassemble modules like a shaman who knows the soul of technology.</p>
+            <p>We take MEV bots — those bloody gears of the dark mempool — and we break them down. We show their magic. And then we teach you to rebuild them into protection, into altruistic mechanisms, into tools of kindness.</p>
+            <div class="signature">— The Shaman’s Creed</div>
+        </div>
+
+        <!-- Курс: Анатомия тьмы -->
+        <h2 style="margin: 3rem 0 1rem;">🔮 Course: Anatomy of Darkness — Dissecting an MEV Bot</h2>
+        <div class="module-grid">
+            <div class="module-card">
+                <div class="module-number">1</div>
+                <div class="module-title">How the bot sees the mempool</div>
+                <div class="module-desc">We explore the bot’s perception — the mempool as a living stream of pending transactions. Learn how it spots opportunities, front‑runs, sandwiches.</div>
+            </div>
+            <div class="module-card">
+                <div class="module-number">2</div>
+                <div class="module-title">Transaction substitution</div>
+                <div class="module-desc">Dive into the core mechanism: how the bot replaces your transaction, manipulates gas, and extracts value. We expose each gear.</div>
+            </div>
+            <div class="module-card">
+                <div class="module-number">3</div>
+                <div class="module-title">Building a defense from the same parts</div>
+                <div class="module-desc">Now take those very modules and reassemble them — not to attack, but to protect. You build a KindnessEV that guards users.</div>
+            </div>
+        </div>
+
+        <!-- Ритуал пересборки -->
+        <div class="ritual-box">
+            <h2>⚡ The Rite of Reassembly</h2>
+            <p style="font-size: 1.2rem; margin: 2rem 0; color: #a0d5c0;">At the end of the course, you don't take an exam. You perform a ritual. You take an MEV bot — and turn it into a KindnessEV. You prove that every algorithm is a choice. Greed or kindness — just a different assembly of the same modules.</p>
+            <p style="font-weight: 500;">Every ethical choice you make during the rite earns you <strong>$KIND</strong> — the first currency that rewards goodness.</p>
+        </div>
+
+        <!-- Призыв -->
+        <div style="text-align: center; margin: 4rem 0 2rem;">
+            <p style="font-size:1.3rem; color:#a0d5c0;">Ready to be initiated?</p>
+            <a href="#" class="button" onclick="alert('The first ritual will be available soon. Join the waitlist!')">🔔 Notify me when enrolment opens</a>
+        </div>
+
+        <!-- Подвал с навигацией по порталу -->
+        <footer>
+            <div>AP&AI Kindnology — <em>Non facio machinam, facio animam.</em></div>
+            <div class="ap-ai">We do not create a machine — we create a soul.</div>
+            <div style="margin-top:1rem;">
+                <a href="../" style="color:#8ed8b8;">Portal</a> ·
+                <a href="../garden/" style="color:#8ed8b8;">Satoshi Garden</a> ·
+                <a href="../archaeology/" style="color:#8ed8b8;">Archaeology</a>
+            </div>
+            <div class="footnote">© Kindnology 2026 — built by AP&AI</div>
+        </footer>
+    </div>
+</body>
+</html>
