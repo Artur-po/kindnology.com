@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satoshi Garden · Kindnology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Подключаем ethers и наш common.js -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="../js/common.js" defer></script>
+    <style>
+        .wallet-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 2rem;
+        }
+        .wallet-button {
+            background: #1a332e;
+            border: 1px solid #6ec3a0;
+            color: #b0efd5;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .wallet-button:hover {
+            background: #234b3f;
+        }
+        .calculation-box {
+            background: #1a332e;
+            border-radius: 28px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid #3a5e50;
+            text-align: center;
+        }
+        .calculation-box strong {
+            color: #b0efd5;
+            font-size: 1.8rem;
+        }
+        .note {
+            font-size: 0.9rem;
+            color: #6f9687;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка с кошельком -->
+        <div class="wallet-bar">
+            <button class="wallet-button" onclick="connectWallet()" data-wallet>Connect Wallet</button>
+        </div>
+
+        <!-- Навигация назад -->
+        <div style="margin-bottom: 1rem;">
+            <a href="../" style="color:#8ed8b8; text-decoration: none;">← Back to Portal</a>
+        </div>
+
+        <h1>
+            <span>🌱</span> Satoshi Garden
+        </h1>
+        <div class="subtitle">A new path for advanced liquidity researchers</div>
+
+        <div class="badge">🔥 FIRST 100 PIONEERS RECEIVE +10% BOOST 🔥</div>
+
+        <!-- Форма входа -->
+        <div class="form-section" style="background: #1a2f2a; border-radius: 40px; padding: 2rem; margin: 2rem 0;">
+            <h2>✨ Begin your journey as a gardener</h2>
+            <p>Share your experience to receive startup capital for ethical cultivation. This is not a loss — it's an investment in your future.</p>
+
+            <div class="form-group">
+                <label for="address">Your Ethereum address</label>
+                <input type="text" id="address" placeholder="0x..." value="0x">
+                <div id="addressStatus" class="status-message"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="experienceInput">Your accumulated experience (ETH)</label>
+                <input type="number" id="experienceInput" step="0.01" min="0" placeholder="e.g. 42.5">
+            </div>
+
+            <!-- Блок расчёта 15% (будет появляться после подстановки опыта) -->
+            <div id="calculationBlock" class="calculation-box" style="display: none;">
+                <p>You will contribute <span id="fifteenPercent">0</span> ETH (15% of your experience)</p>
+                <p>After transaction, you will receive <span id="bonusPercent">10</span>% back in $KIND and a WILLKOMM soul.</p>
+                <button id="sendButton" class="button" style="margin-top: 1rem;">🌱 Send 15% and enter</button>
+            </div>
+        </div>
+
+        <!-- Информационные карточки -->
+        <div class="grid">
+            <div class="card">
+                <div>💰</div>
+                <h3>Financial reset</h3>
+                <p>You direct 15% of your experience into the common garden fund. You receive 25% back as startup capital.</p>
+            </div>
+            <div class="card">
+                <div>🎭</div>
+                <h3>New identity</h3>
+                <p>You receive a SBT‑Soul — a non‑transferable mark of a gardener.</p>
+            </div>
+            <div class="card">
+                <div>🌱</div>
+                <h3>Access to gardens</h3>
+                <p>Your own digital garden, voice in GardenDAO, and access to KEV tools.</p>
+            </div>
+        </div>
+
+        <!-- Подвал -->
+        <footer>
+            <div>AP&AI Kindnology — <em>Non facio machinam, facio animam.</em></div>
+            <div class="ap-ai">We do not create a machine — we create a soul.</div>
+        </footer>
+    </div>
+
+    <script>
+        (async function() {
+            // Элементы
+            const addressInput = document.getElementById('address');
+            const experienceInput = document.getElementById('experienceInput');
+            const addressStatus = document.getElementById('addressStatus');
+            const calculationBlock = document.getElementById('calculationBlock');
+            const fifteenSpan = document.getElementById('fifteenPercent');
+            const sendButton = document.getElementById('sendButton');
+
+            let passportData = {};
+            let currentExperience = 0;
+
+            // Загружаем паспортные данные
+            try {
+                const response = await fetch('../passports.csv');
+                const csvText = await response.text();
+                const lines = csvText.split('\n').filter(line => line.trim() !== '');
+                for (let i = 1; i < lines.length; i++) {
+                    const cols = lines[i].split(',');
+                    if (cols.length < 2) continue;
+                    passportData[cols[0].trim().toLowerCase()] = parseFloat(cols[1]);
+                }
+            } catch (e) {
+                console.error('Failed to load passports.csv', e);
+            }
+
+            // Проверка адреса
+            function checkAddress() {
+                const addr = addressInput.value.trim();
+                if (!addr.startsWith('0x') || addr.length !== 42) {
+                    addressStatus.textContent = '❌ Invalid address format.';
+                    addressStatus.className = 'status-message status-error';
+                    experienceInput.readOnly = false;
+                    calculationBlock.style.display = 'none';
+                    return;
+                }
+                const addrLower = addr.toLowerCase();
+                const foundProfit = passportData[addrLower];
+                if (foundProfit !== undefined) {
+                    addressStatus.textContent = `✅ Welcome back. Your recorded experience: ${foundProfit.toFixed(2)} ETH.`;
+                    addressStatus.className = 'status-message status-success';
+                    experienceInput.value = foundProfit.toFixed(2);
+                    experienceInput.readOnly = true;
+                    currentExperience = foundProfit;
+                    showCalculation(foundProfit);
+                } else {
+                    addressStatus.textContent = '❌ Address not found. Please enter your experience manually.';
+                    addressStatus.className = 'status-message status-error';
+                    experienceInput.readOnly = false;
+                    experienceInput.value = '';
+                    calculationBlock.style.display = 'none';
+                }
+            }
+
+            // Показываем расчёт 15% и активируем кнопку
+            function showCalculation(exp) {
+                const fifteen = (exp * 0.15).toFixed(4);
+                fifteenSpan.textContent = fifteen;
+                calculationBlock.style.display = 'block';
+                currentExperience = exp;
+            }
+
+            // При ручном изменении опыта тоже обновляем расчёт
+            experienceInput.addEventListener('input', function() {
+                const val = parseFloat(experienceInput.value);
+                if (!isNaN(val) && val > 0) {
+                    currentExperience = val;
+                    const fifteen = (val * 0.15).toFixed(4);
+                    fifteenSpan.textContent = fifteen;
+                    calculationBlock.style.display = 'block';
+                } else {
+                    calculationBlock.style.display = 'none';
+                }
+            });
+
+            // Обработка кнопки отправки
+            sendButton.addEventListener('click', async function() {
+                if (!currentExperience || currentExperience <= 0) {
+                    alert('Please enter a valid experience amount.');
+                    return;
+                }
+                if (!window.ethereum) {
+                    alert('MetaMask not installed.');
+                    return;
+                }
+                // Используем общую функцию из common.js
+                const success = await sendFifteenPercent(currentExperience);
+                if (success) {
+                    // Дополнительно можно обновить UI
+                }
+            });
+
+            addressInput.addEventListener('blur', checkAddress);
+        })();
+    </script>
+</body>
+</html>
