@@ -1,0 +1,610 @@
+{
+  "timestamp": "2026-03-01T16:42:30.191933",
+  "stats": {
+    "donors_in_p passports": 10151,
+    "donors_processed": 10180,
+    "crystals_processed": 48805,
+    "organs_harvested": 244025
+  },
+  "organs": [
+    {
+      "type": "brain",
+      "donor": "0x519ea113fe70724c616faf4092f8f3b3b837c672",
+      "crystal_id": "0000c201d844dbf8_031031",
+      "strategy": "SUPER-ML (100.0%)",
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 35.8,
+      "harvest_date": "2026-03-01T16:33:23.281128"
+    },
+    {
+      "type": "eyes",
+      "donor": "0x519ea113fe70724c616faf4092f8f3b3b837c672",
+      "crystal_id": "0000c201d844dbf8_031031",
+      "block": 24394713,
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 35.8,
+      "harvest_date": "2026-03-01T16:33:23.281128"
+    },
+    {
+      "type": "heart",
+      "donor": "0x519ea113fe70724c616faf4092f8f3b3b837c672",
+      "crystal_id": "0000c201d844dbf8_031031",
+      "profit": 0.8,
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 35.8,
+      "harvest_date": "2026-03-01T16:33:23.281128"
+    },
+    {
+      "type": "hands",
+      "donor": "0x519ea113fe70724c616faf4092f8f3b3b837c672",
+      "crystal_id": "0000c201d844dbf8_031031",
+      "file": "mev_20260206_031031_0000c201d844dbf8_031031.json",
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 35.8,
+      "harvest_date": "2026-03-01T16:33:23.281128"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0x519ea113fe70724c616faf4092f8f3b3b837c672",
+      "crystal_id": "0000c201d844dbf8_031031",
+      "warm_gas": 0.12,
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 35.8,
+      "harvest_date": "2026-03-01T16:33:23.281128"
+    },
+    {
+      "type": "brain",
+      "donor": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+      "crystal_id": "000163cb8b39c85a_204514",
+      "strategy": "SUPER-ML (100.0%)",
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "eyes",
+      "donor": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+      "crystal_id": "000163cb8b39c85a_204514",
+      "block": 24500239,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "heart",
+      "donor": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+      "crystal_id": "000163cb8b39c85a_204514",
+      "profit": 0.6732096608400001,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "hands",
+      "donor": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+      "crystal_id": "000163cb8b39c85a_204514",
+      "file": "mev_20260220_204514_000163cb8b39c85a_204514.json",
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0xae2fc483527b8ef99eb5d9b44875f005ba1fae13",
+      "crystal_id": "000163cb8b39c85a_204514",
+      "warm_gas": 0.10098144912600002,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "brain",
+      "donor": "0x9642b23ed1e01df1092b92641051881a322f5d4e",
+      "crystal_id": "000167140feff16a_165922",
+      "strategy": "SUPER-ML (100.0%)",
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "eyes",
+      "donor": "0x9642b23ed1e01df1092b92641051881a322f5d4e",
+      "crystal_id": "000167140feff16a_165922",
+      "block": 24434580,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "heart",
+      "donor": "0x9642b23ed1e01df1092b92641051881a322f5d4e",
+      "crystal_id": "000167140feff16a_165922",
+      "profit": 1.91248673472,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "hands",
+      "donor": "0x9642b23ed1e01df1092b92641051881a322f5d4e",
+      "crystal_id": "000167140feff16a_165922",
+      "file": "mev_20260211_165922_000167140feff16a_165922.json",
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0x9642b23ed1e01df1092b92641051881a322f5d4e",
+      "crystal_id": "000167140feff16a_165922",
+      "warm_gas": 0.286873010208,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.296714"
+    },
+    {
+      "type": "brain",
+      "donor": "0xeb73b4a639deb107e739d251cee78dcf58d2d70f",
+      "crystal_id": "0002d13538bf6e22_135727",
+      "strategy": "SUPER-ML (99.9%)",
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.312398"
+    },
+    {
+      "type": "eyes",
+      "donor": "0xeb73b4a639deb107e739d251cee78dcf58d2d70f",
+      "crystal_id": "0002d13538bf6e22_135727",
+      "block": 24462349,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.312398"
+    },
+    {
+      "type": "heart",
+      "donor": "0xeb73b4a639deb107e739d251cee78dcf58d2d70f",
+      "crystal_id": "0002d13538bf6e22_135727",
+      "profit": 0.46701035232000004,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.312398"
+    },
+    {
+      "type": "hands",
+      "donor": "0xeb73b4a639deb107e739d251cee78dcf58d2d70f",
+      "crystal_id": "0002d13538bf6e22_135727",
+      "file": "mev_20260215_135727_0002d13538bf6e22_135727.json",
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.312398"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0xeb73b4a639deb107e739d251cee78dcf58d2d70f",
+      "crystal_id": "0002d13538bf6e22_135727",
+      "warm_gas": 0.070051552848,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.312398"
+    },
+    {
+      "type": "brain",
+      "donor": "0xde9b8968a7da72076fcf231b25771f1189297490",
+      "crystal_id": "0003b31afdc9559a_223038",
+      "strategy": "SUPER-ML (99.7%)",
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 36.18,
+      "harvest_date": "2026-03-01T16:33:23.327966"
+    },
+    {
+      "type": "eyes",
+      "donor": "0xde9b8968a7da72076fcf231b25771f1189297490",
+      "crystal_id": "0003b31afdc9559a_223038",
+      "block": 24393320,
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 36.18,
+      "harvest_date": "2026-03-01T16:33:23.327966"
+    },
+    {
+      "type": "heart",
+      "donor": "0xde9b8968a7da72076fcf231b25771f1189297490",
+      "crystal_id": "0003b31afdc9559a_223038",
+      "profit": 0.42278956356,
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 36.18,
+      "harvest_date": "2026-03-01T16:33:23.327966"
+    },
+    {
+      "type": "hands",
+      "donor": "0xde9b8968a7da72076fcf231b25771f1189297490",
+      "crystal_id": "0003b31afdc9559a_223038",
+      "file": "mev_20260205_223038_0003b31afdc9559a_223038.json",
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 36.18,
+      "harvest_date": "2026-03-01T16:33:23.327966"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0xde9b8968a7da72076fcf231b25771f1189297490",
+      "crystal_id": "0003b31afdc9559a_223038",
+      "warm_gas": 0.063418434534,
+      "quality": 100,
+      "level": "планктон",
+      "warmth": 36.18,
+      "harvest_date": "2026-03-01T16:33:23.327966"
+    },
+    {
+      "type": "brain",
+      "donor": "0x6809b95622b2dcc53d2f3fb2301b36f6a8c5b584",
+      "crystal_id": "000b06a4a87c585c_144102",
+      "strategy": "SUPER-ML (100.0%)",
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.343661"
+    },
+    {
+      "type": "eyes",
+      "donor": "0x6809b95622b2dcc53d2f3fb2301b36f6a8c5b584",
+      "crystal_id": "000b06a4a87c585c_144102",
+      "block": 24484083,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.343661"
+    },
+    {
+      "type": "heart",
+      "donor": "0x6809b95622b2dcc53d2f3fb2301b36f6a8c5b584",
+      "crystal_id": "000b06a4a87c585c_144102",
+      "profit": 0.52700878224,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.343661"
+    },
+    {
+      "type": "hands",
+      "donor": "0x6809b95622b2dcc53d2f3fb2301b36f6a8c5b584",
+      "crystal_id": "000b06a4a87c585c_144102",
+      "file": "mev_20260218_144102_000b06a4a87c585c_144102.json",
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.343661"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0x6809b95622b2dcc53d2f3fb2301b36f6a8c5b584",
+      "crystal_id": "000b06a4a87c585c_144102",
+      "warm_gas": 0.079051317336,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.343661"
+    },
+    {
+      "type": "brain",
+      "donor": "0xa70d360ad921dd04448c23e1d12260d0d9542ae0",
+      "crystal_id": "000e14d6a82099a1_000425",
+      "strategy": "SUPER-ML (98.3%)",
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 32.85,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "eyes",
+      "donor": "0xa70d360ad921dd04448c23e1d12260d0d9542ae0",
+      "crystal_id": "000e14d6a82099a1_000425",
+      "block": 24379485,
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 32.85,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "heart",
+      "donor": "0xa70d360ad921dd04448c23e1d12260d0d9542ae0",
+      "crystal_id": "000e14d6a82099a1_000425",
+      "profit": 0.5959536295600001,
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 32.85,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "hands",
+      "donor": "0xa70d360ad921dd04448c23e1d12260d0d9542ae0",
+      "crystal_id": "000e14d6a82099a1_000425",
+      "file": "mev_20260204_000425_000e14d6a82099a1_000425.json",
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 32.85,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0xa70d360ad921dd04448c23e1d12260d0d9542ae0",
+      "crystal_id": "000e14d6a82099a1_000425",
+      "warm_gas": 0.08939304443400001,
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 32.85,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "brain",
+      "donor": "0xb45e78cd5c5d57bd716f84cebcc183b061e05586",
+      "crystal_id": "0010b102e3d2871d_034103",
+      "strategy": "SUPER-ML (100.0%)",
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 34.8,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "eyes",
+      "donor": "0xb45e78cd5c5d57bd716f84cebcc183b061e05586",
+      "crystal_id": "0010b102e3d2871d_034103",
+      "block": 24459276,
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 34.8,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "heart",
+      "donor": "0xb45e78cd5c5d57bd716f84cebcc183b061e05586",
+      "crystal_id": "0010b102e3d2871d_034103",
+      "profit": 1.8,
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 34.8,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "hands",
+      "donor": "0xb45e78cd5c5d57bd716f84cebcc183b061e05586",
+      "crystal_id": "0010b102e3d2871d_034103",
+      "file": "mev_20260215_034103_0010b102e3d2871d_034103.json",
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 34.8,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0xb45e78cd5c5d57bd716f84cebcc183b061e05586",
+      "crystal_id": "0010b102e3d2871d_034103",
+      "warm_gas": 0.27,
+      "quality": 100,
+      "level": "рыба",
+      "warmth": 34.8,
+      "harvest_date": "2026-03-01T16:33:23.359269"
+    },
+    {
+      "type": "brain",
+      "donor": "0x5934e06498db785ff26807161ce9d09063231321",
+      "crystal_id": "001365d8d798baf1_160138",
+      "strategy": "SUPER-ML (99.9%)",
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "eyes",
+      "donor": "0x5934e06498db785ff26807161ce9d09063231321",
+      "crystal_id": "001365d8d798baf1_160138",
+      "block": 24434292,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "heart",
+      "donor": "0x5934e06498db785ff26807161ce9d09063231321",
+      "crystal_id": "001365d8d798baf1_160138",
+      "profit": 0.95061522512,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "hands",
+      "donor": "0x5934e06498db785ff26807161ce9d09063231321",
+      "crystal_id": "001365d8d798baf1_160138",
+      "file": "mev_20260211_160138_001365d8d798baf1_160138.json",
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0x5934e06498db785ff26807161ce9d09063231321",
+      "crystal_id": "001365d8d798baf1_160138",
+      "warm_gas": 0.14259228376799998,
+      "quality": 100,
+      "level": "кит",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "brain",
+      "donor": "0x3b6c26116749a6f9d194172d56299377e61bb0ae",
+      "crystal_id": "001575f4627c58a6_190115",
+      "strategy": "SUPER-ML (100.0%)",
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "eyes",
+      "donor": "0x3b6c26116749a6f9d194172d56299377e61bb0ae",
+      "crystal_id": "001575f4627c58a6_190115",
+      "block": 24442347,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "heart",
+      "donor": "0x3b6c26116749a6f9d194172d56299377e61bb0ae",
+      "crystal_id": "001575f4627c58a6_190115",
+      "profit": 1.90476190476,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "hands",
+      "donor": "0x3b6c26116749a6f9d194172d56299377e61bb0ae",
+      "crystal_id": "001575f4627c58a6_190115",
+      "file": "mev_20260212_190115_001575f4627c58a6_190115.json",
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0x3b6c26116749a6f9d194172d56299377e61bb0ae",
+      "crystal_id": "001575f4627c58a6_190115",
+      "warm_gas": 0.285714285714,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 0.0,
+      "harvest_date": "2026-03-01T16:33:23.374893"
+    },
+    {
+      "type": "brain",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153528",
+      "strategy": "ФРОНТРАННИНГ",
+      "quality": 37,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.390532"
+    },
+    {
+      "type": "eyes",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153528",
+      "block": 24434162,
+      "quality": 37,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.390532"
+    },
+    {
+      "type": "heart",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153528",
+      "profit": 3.78049877384,
+      "quality": 37,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.390532"
+    },
+    {
+      "type": "hands",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153528",
+      "file": "mev_20260211_153528_0019b42167c1a972_153528.json",
+      "quality": 37,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.390532"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153528",
+      "warm_gas": 0.567074816076,
+      "quality": 37,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.390532"
+    },
+    {
+      "type": "brain",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153529",
+      "strategy": "SUPER-ML (99.9%)",
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.406142"
+    },
+    {
+      "type": "eyes",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153529",
+      "block": 24434162,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.406142"
+    },
+    {
+      "type": "heart",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153529",
+      "profit": 1.89024938692,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.406142"
+    },
+    {
+      "type": "hands",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153529",
+      "file": "mev_20260211_153529_0019b42167c1a972_153529.json",
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.406142"
+    },
+    {
+      "type": "reflexes",
+      "donor": "0x3710164e4d6fcd5312fc07177e79728b3c26e201",
+      "crystal_id": "0019b42167c1a972_153529",
+      "warm_gas": 0.283537408038,
+      "quality": 100,
+      "level": "дельфин",
+      "warmth": 25.91,
+      "harvest_date": "2026-03-01T16:33:23.406142"
+    },
+    {
